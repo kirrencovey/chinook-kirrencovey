@@ -1,8 +1,6 @@
 For each of the following exercises, provide the appropriate query. Everything from class and the [SQL Documentation](https://www.w3schools.com/sql/sql_intro.asp) is fair game.
-
 1. `non_usa_customers.sql`: Provide a query showing Customers (just their full names, customer ID and country) who are not in the US.
-1. `brazil_customers.sql`: Provide a query only showing the Customers from Brazil.
-1. `brazil_customers_invoices.sql`: Provide a query showing the Invoices of customers who are from Brazil. The resultant table should show the customer's full name, Invoice ID, Date of the invoice and billing country.
+1. `brazil_customers.sql`: Provide a query only showing the Customers from Brazil.1. `brazil_customers_invoices.sql`: Provide a query showing the Invoices of customers who are from Brazil. The resultant table should show the customer's full name, Invoice ID, Date of the invoice and billing country.
 1. `sales_agents.sql`: Provide a query showing only the Employees who are Sales Agents.
 1. `unique_invoice_countries.sql`: Provide a query showing a unique/distinct list of billing countries from the Invoice table.
 1. `sales_agent_invoices.sql`: Provide a query that shows the invoices associated with each sales agent. The resultant table should include the Sales Agent's full name.
@@ -19,9 +17,7 @@ For each of the following exercises, provide the appropriate query. Everything f
 1. `invoices_line_item_count.sql`: Provide a query that shows all Invoices but includes the # of invoice line items.
 1. `sales_agent_total_sales.sql`: Provide a query that shows total sales made by each sales agent.
 1. `top_2009_agent.sql`: Which sales agent made the most in sales in 2009?
-
     > **Hint:** Use the [MAX](https://docs.microsoft.com/en-us/sql/t-sql/functions/max-transact-sql?view=sql-server-2017) function on a [subquery](http://beginner-sql-tutorial.com/sql-subquery.htm).
-
 1. `top_agent.sql`: Which sales agent made the most in sales over all?
 1. `sales_agent_customer_count.sql`: Provide a query that shows the count of customers assigned to each sales agent.
 1. `sales_per_country.sql`: Provide a query that shows the total sales per country.
@@ -30,3 +26,4 @@ For each of the following exercises, provide the appropriate query. Everything f
 1. `top_5_tracks.sql`: Provide a query that shows the top 5 most purchased songs.
 1. `top_3_artists.sql`: Provide a query that shows the top 3 best selling artists.
 1. `top_media_type.sql`: Provide a query that shows the most purchased Media Type.
+
