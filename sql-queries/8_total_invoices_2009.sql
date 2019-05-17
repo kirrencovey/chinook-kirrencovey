@@ -2,5 +2,5 @@
 
 SELECT COUNT(InvoiceId) Invoices
 FROM Invoice
-WHERE DATEPART(yy, InvoiceDate) = 2009
+WHERE DATEPART(yyyy, InvoiceDate) = 2009
 ;

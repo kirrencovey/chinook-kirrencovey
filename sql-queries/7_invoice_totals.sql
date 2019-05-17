@@ -3,11 +3,11 @@
 SELECT 
 	i.InvoiceId,  
 	i.Total,
-	concat (c.FirstName, ' ', c.LastName) Customer,
+	concat (c.FirstName, ' ', c.LastName) CustomerName,
 	c.Country,
 	concat ( e.FirstName, ' ', e.LastName) SalesAgent
 FROM Employee e
 JOIN Customer c ON c.SupportRepId = e.EmployeeId
 JOIN Invoice i ON i.CustomerId = c.CustomerId
-ORDER BY c.LastName
+ORDER BY CustomerName
 ;
