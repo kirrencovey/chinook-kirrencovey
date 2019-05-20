@@ -2,7 +2,7 @@
 
 SELECT CONCAT(e.FirstName, ' ', e.LastName) SalesAgent, c.NumberOfCustomers 
 FROM Employee e
-JOIN (
+LEFT JOIN (
 	SELECT 
 		DISTINCT SupportRepId SalesAgentId,
 		COUNT(SupportRepId) NumberOfCustomers
