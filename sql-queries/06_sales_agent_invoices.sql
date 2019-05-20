@@ -13,4 +13,4 @@ SELECT
 FROM Employee e
 JOIN Customer c ON c.SupportRepId = e.EmployeeId
 JOIN Invoice i ON i.CustomerId = c.CustomerId
-ORDER BY e.LastName;
+ORDER BY e.LastName, i.BillingCountry, i.Total desc;
