@@ -11,3 +11,11 @@ JOIN (
 	GROUP BY e.EmployeeId
 ) t ON t.EmployeeId = e.EmployeeId
 ORDER BY t.TotalSales desc;
+
+-- OR --
+
+SELECT e.FirstName, e.LastName, COUNT(c.CustomerId) NumberOfCustomers
+FROM Employee e
+LEFT JOIN Customer c ON e.EmployeeId = c.SupportRepId
+WHERE e.Title = 'Sales Support Agent'
+GROUP BY e.FirstName, e.LastName;
